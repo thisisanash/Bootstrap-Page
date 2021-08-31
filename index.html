@@ -5,38 +5,85 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bootstrap Page by @thisisanash</title>
-        
-
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous">
+        <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
         <style>
         @font-face {
-            font-family: 'Sailyme';
-            src: url('Sailyme.ttf') format('ttf');
-         
+            font-family: mr-eave;
+            src: url("font/mreavesxl/MrEavesXLModNarOT-Reg.ttf");
         }
-
 
         *{
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            border: 1px dashed rgba(109, 109, 109, 0.494);
-            font-family: 'MrEaves' sans-serif;
+            /* border: 0.1px dashed rgba(109, 109, 109, 0.494); */
+            font-family: 'mr-eave' sans-serif;
         }
-            
-        h1{
-            font-family: 'Sailyme' sans-serif ;
-           color:green;
-          }
-            
+        body {
+            height: 100vh;
+            width: 100%;
+        }
+        button{
+            background: #9f8a50 !important;
+            font-weight: 700 !important;
+            border-radius: 3px !important;
+            font-size: 14px !important;
+        }
+        .hero{
+            height: 90vh;
+            width:100%;
+            color: #fff;
+            background: url(Images/man-smiling-working.jpg);
+            background-position: 50% 0%;
+            background-size: cover;
+            padding: 150px 200px !important;
+        }
+        
     </style>
     </head>
     <body>
-        <div class="container">
-            <div class="nav"></div>
-            <div class="hero">
-                <h1>
-                    Get More of What You Want From Your Business
-                </h1>
+        <div class="code">
+            <div class="container-fluid p-0">
+                <header class="container p-0 d-flex flex-wrap
+                    justify-content-center py-3
+                    my-2">
+                    <a href="/" class="d-flex align-items-center mb-3
+                        mb-md-0
+                        me-md-auto text-dark text-decoration-none h-100 w-25">
+                        <img src="Images/value-growth-horizontal-light-bg2.png"
+                            class="w-100" alt="">
+                    </a>
+
+                    <ul class="nav nav-pills">
+                        <li class="nav-item d-flex align-items-center"><a
+                                href="#" class="nav-link">Resources</a></li>
+                        <li class="nav-item d-flex align-items-center"><a
+                                href="#" class="nav-link">Blog</a></li>
+                        <li class="nav-item d-flex align-items-center"><button
+                                href="#" class="nav-link
+                                active">CONTACT LEE<span class="iconify"
+                                    data-icon="dashicons:arrow-right-alt2"></span></button></li>
+                    </ul>
+                </header>
+            </div>
+            <div class="hero col-12 d-flex align-content-center">
+                <div class="col-7 d-flex flex-column justify-content-evenly">
+                    <h1 class="fw-bold">
+                        Get More of What You Want From Your Business
+                    </h1>
+                    <p>Helping business owners & leaders follow a proven
+                        process to build a more valuable business—so you can
+                        live the life you’ve always dreamed of.
+                    </p>
+                    <button class="btn btn-primary col-5 py-3 p-4 border-0"
+                        type="submit">SHOW ME HOW<span class="iconify"
+                            data-icon="dashicons:arrow-right-alt2"></span></button>
+                </div>
             </div>
         </div>
     </body>
