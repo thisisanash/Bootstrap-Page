@@ -1,98 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Page by @thisisanash</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-    <style>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Page by @thisisanash</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous">
+        <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <style>
         @font-face {
             font-family: mr-eave;
             src: url("font/mreavesxl/MrEavesXLModNarOT-Reg.ttf");
         }
 
-        * {
+        *{
             padding: 0;
             margin: 0;
             box-sizing: border-box;
             border: 0.1px dashed rgba(109, 109, 109, 0.494);
-            font-family: 'mr-eave'sans-serif;
+            font-family: 'mr-eave' sans-serif;
         }
-
         body {
             height: 100vh;
             width: 100%;
         }
-
-        header ul li a {
+        header ul li a{
             color: #463d25 !important;
             font-weight: 500;
         }
-
-        button {
+        button{
             background: #9f8a50 !important;
             font-weight: 700 !important;
             border-radius: 3px !important;
             font-size: 14px !important;
             border: 0px solid !important;
+            border: 0px solid !important;
             color: #fff !important;
         }
 
-        .f-20{
-            font-size: 20px !important;
-        }
-
-        .hero {
+        .hero{
             height: 90vh;
-            width: 100%;
+            width:100%;
             color: #fff;
             background: url(Images/man-smiling-working.jpg);
             background-position: 50% 0%;
             background-size: cover;
         }
-
-        .hero .container {
+        .hero .container{ 
             padding: 100px;
-        }
-
-        .hero .container .d-flex {
+        } 
+        .hero .container .d-flex{
             height: 70% !important;
         }
-
-        .d2 .col {
-            color: rgba(70, 61, 37, .75) !important;
+        .d2 .col-4{
+            color: rgba(70,61,37,.75) !important;
             background: #f4eee2;
             text-align: center;
             height: 100px;
         }
-
-        .d2 .col h3 {
+        .d2 .col-4 h3{
             color: rgb(159, 138, 80) !important;
             margin: 0;
         }
-
-        h3 {
+        h3{
             font-size: 20px !important;
-            text-decoration: none !important;
-            font-weight: 600 !important;
         }
-
-        .d3 {
+        .d3{
             margin-top: 100px;
         }
-
-        .theme-dark-color {
-            color: rgba(70, 61, 37) !important;
-            text-decoration: none;
+        .theam-dark-color{
+            color: rgba(70,61,37) !important;
         }
-
-        .d4 {
+        .d4{
             height: 75vh !important;
             color: #fff;
             background: url(Images/family-reading-together.jpg);
@@ -101,236 +88,312 @@
             margin: 100px 0px;
             padding: 100px;
         }
-
-        .d5 {
+        .d5{
             margin: 0px 100px;
             padding: 0px 100px;
             line-height: 150% !important;
         }
+        .d6, .d8{
+            background-color: #9f8a50;
+            color: #fff;
+            height: 100vh;
+            padding: 8% 5%;
+        }
+        .d6 .row img {
+            position: relative;
+            width: 80% !important;
+        }
+        .box {
+            font-size: 20px;
+            padding: 24px;
+            margin-top: 34px;
+            background: #f0ebe5;
+        }
+        .box::before{
+            position: relative;
+            top: -10px;
+            left: 0;
+            background: #9a8957;
+            z-index: 99;
+            height: 10px;
+            width: 100%;
+        }
+        .d8{
+            background: url("Images/woman-on-phone.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
     </style>
-</head>
-
-<body>
-    <div class="code">
-        <div class="container-fluid p-0">
-            <header class="container p-0 d-flex flex-wrap
+    </head>
+    <body>
+        <div class="code">
+            <div class="container-fluid p-0">
+                <header class="container p-0 d-flex flex-wrap
                     justify-content-center py-3
                     my-2">
-                <a href="/" class="d-flex align-items-center mb-3
+                    <a href="/" class="d-flex align-items-center mb-3
                         mb-md-0
                         me-md-auto text-dark text-decoration-none h-100 w-25">
-                    <img src="Images/value-growth-horizontal-light-bg2.png" class="w-100" alt="">
-                </a>
-
-                <ul class="nav nav-pills">
-                    <li class="nav-item d-flex align-items-center"><a href="#" class="nav-link">Resources</a></li>
-                    <li class="nav-item d-flex align-items-center"><a href="#" class="nav-link">Blog</a></li>
-                    <li class="nav-item d-flex align-items-center"><button href="#" class="nav-link
-                                active">CONTACT LEE<span class="iconify"
-                                data-icon="dashicons:arrow-right-alt2"></span></button></li>
-                </ul>
-            </header>
-        </div>
-        <div class="hero col-12 d-flex align-content-center">
-            <div class="container d-flex align-items-center">
-                <div class="col-7 d-flex flex-column
-                        justify-content-between">
-                    <h1 class="fw-bold">
-                        Get More of What You Want From Your Business
-                    </h1>
-                    <p>Helping business owners & leaders follow a proven
-                        process to build a more valuable business—so you can
-                        live the life you’ve always dreamed of.
-                    </p>
-                    <button class="btn btn-primary col-5 py-3 p-3 border-0" type="submit">SHOW ME HOW<span
-                            class="iconify" data-icon="dashicons:arrow-right-alt2"></span></button>
-                </div>
-            </div>
-        </div>
-        <div class="row col-12 m-0 d2">
-            <div class="col d-flex flex-column justify-content-center">
-                <h3>
-                    ✓ CONFIDENCE
-                </h3>
-                <p class="mt-1mb-0">Follow a proven system to grow your
-                    company</p>
-            </div>
-            <div class="col d-flex flex-column mx-3 justify-content-center">
-                <h3>
-                    ✓ PEACE OF MIND
-                </h3>
-                <p class="mt-1mb-0">Knowing your business can survive and
-                    thrive</p>
-            </div>
-            <div class="col d-flex flex-column justify-content-center">
-                <h3>
-                    ✓ FINANCIAL FREEDOM
-                </h3>
-                <p class="mt-1mb-0">For you and your family's future</p>
-            </div>
-        </div>
-        <div class="container d3 text-center">
-            <h2>Ask Yourself, Are You Struggling With... </h2>
-            <div class="row mt-4 p-2 h-auto">
-                <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
-                    <img src="Images/A+growth+chart+icon.png" class="w-100
-                            img a my-4" />
-                    <h3 class="theme-dark-color">
-                        Growth
-                    </h3>
-                    <p class="my-4 4 mx-2">Hitting a growth ceiling with no
-                        strategy on how to break through?</p>
-                </div>
-                <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
-                    <img src="Images/A+mountain+icon.png" class="w-100 img a
-                            my-4" />
-                    <h3 class="theme-dark-color">
-                        Stress
-                    </h3>
-                    <p class="my-4 4 mx-2">Frustrated by the lack of control
-                        you feel in your business right now?</p>
-                </div>
-                <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
-                    <img src="Images/a+bar+graph+icon.png" class="w-100 img
-                            a my-4" />
-                    <h3 class="theme-dark-color">
-                        Valuation
-                    </h3>
-                    <p class="my-4 mx-2">How to properly determine the true
-                        value of your business? </p>
-                </div>
-            </div>
-            <div class="row mt-4 p-2 h-auto">
-                <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
-                    <img src="Images/A+lounge+chair+and+umbrella+icon.png" class="w-100 img a my-4" />
-                    <h3 class="theme-dark-color">
-                        Growth
-                    </h3>
-                    <p class="my-4 4 mx-2">Hitting a growth ceiling with no
-                        strategy on how to break through?</p>
-                </div>
-                <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
-                    <img src="Images/An+unbalanced+scale.png" class="w-100
-                            img a my-4" />
-                    <h3 class="theme-dark-color">
-                        Stress
-                    </h3>
-                    <p class="my-4 4 mx-2">Frustrated by the lack of control
-                        you feel in your business right now?</p>
-                </div>
-                <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
-                    <img src="Images/A+game+plan+on+a+white+board.png" class="w-100 img a my-4" />
-                    <h3 class="theme-dark-color">
-                        Valuation
-                    </h3>
-                    <p class="my-4 mx-2">How to properly determine the true
-                        value of your business? </p>
-                </div>
-            </div>
-            <button type="button" class="btn btn-primary my-3 px-4 py-3
-                    btn-lg">TAKE CONTROL TODAY<span class="iconify"
-                    data-icon="dashicons:arrow-right-alt2"></span></button>
-        </div>
-        <div class="d4 d-flex align-content-center">
-            <div class="col-7 text-center m-auto">
-                <h1>
-                    Discover a Proven Plan To Build a Better Business and a
-                    Better Life
-                </h1>
-                <button type="button" class="btn btn-primary my-3 px-4 py-3
-                        btn-lg">TAKE CONTROL TODAY<span class="iconify"
-                        data-icon="dashicons:arrow-right-alt2"></span></button>
-            </div>
-        </div>
-        <div class="row d5 d-flex justify-content-evenly p-4 gx-4">
-            <div class="col-5">
-                <h2>
-                    What Makes Us Different?
-                </h2>
-                <p class="lead my-4 ">
-                    When it comes to growing a business, most entrepreneurs
-                    tend to get stuck at a certain point and become
-                    frustrated, as they don’t know what to do or how to fix
-                    it. I will help you implement a proven system to break
-                    through that growth ceiling and get to the next level.
-                    This will give you better control of your company,
-                    increased cash flow and ultimately a more durable,
-                    valuable, and smoother running business.
-                </p>
-                <p>
-                    <a class=" theme-dark-color" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                        aria-expanded="false" aria-controls="collapseExample" style="text-decoration: none;">
-                        <h3>+ Click to read more</h3>
+                        <img src="Images/value-growth-horizontal-light-bg2.png"
+                            class="w-100" alt="">
                     </a>
-                </p>
-                <div class="collapse border-top border-0 lead " id="collapseExample">
-                    <div class="card card-body">
-                        As a former CFO and CEO, I’ve been in your shoes and know the challenges you face every day as a
-                        business leader. That is why I’ve spent the last fifteen years helping leadership teams
-                        implement a proven system, so they can get control of their business and create the work-life
-                        balance they’ve always dreamed of.
-                        <ul>
-                            <li><strong>Step 1: Contact Lee</strong> to schedule a free call to talk about the
-                                challenges you are currently facing.</li>
-                            <li><strong>Step 2: Discovery Call</strong> – Together we’ll discuss your business, your
-                                needs and the next steps you need to take.</li>
-                            <li><strong>Step 3: Follow a Proven Pla</strong>n – Learn and implement our proven methods
-                                to take your company to the next level.</li>
-                            <li><strong>Step 4: Grow Your Business</strong> – Watch your business grow to levels you
-                                never thought possible!<br></li>
-                        </ul>
-                        <div class="border-top">
-                            So, schedule a call today. And in the meantime download The 8 Drivers of Company Value for
-                            FREE.
 
-                            It’s time you stop feeling like a slave to your business and instead follow a proven plan to
-                            build a durable and valuable business that can thrive long into the future.
-                        </div>
-
+                    <ul class="nav nav-pills">
+                        <li class="nav-item d-flex align-items-center"><a
+                                href="#" class="nav-link">Resources</a></li>
+                        <li class="nav-item d-flex align-items-center"><a
+                                href="#" class="nav-link">Blog</a></li>
+                        <li class="nav-item d-flex align-items-center"><button
+                                href="#" class="nav-link
+                                active">CONTACT LEE<span class="iconify"
+                                    data-icon="dashicons:arrow-right-alt2"></span></button></li>
+                    </ul>
+                </header>
+            </div>
+            <div class="hero col-12 d-flex align-content-center">
+                <div class="container d-flex align-items-center">
+                    <div class="col-7 d-flex flex-column
+                        justify-content-between">
+                        <h1 class="fw-bold">
+                            Get More of What You Want From Your Business
+                        </h1>
+                        <p>Helping business owners & leaders follow a proven
+                            process to build a more valuable business—so you can
+                            live the life you’ve always dreamed of.
+                        </p>
+                        <button class="btn btn-primary col-5 py-3 p-3 border-0"
+                            type="submit">SHOW ME HOW<span class="iconify"
+                                data-icon="dashicons:arrow-right-alt2"></span></button>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <img src="Images/Value+Growth+Consulting+Groups+Buffalo+Logo.jfif" class="w-100 h-auto" alt="">
+            <div class="row col-12 m-0 d2">
+                <div class="col-4 d-flex flex-column justify-content-center">
+                    <h3>
+                        ✓ CONFIDENCE
+                    </h3>
+                    <p class="mt-1mb-0">Follow a proven system to grow your
+                        company</p>
+                </div>
+                <div class="col-4 d-flex flex-column justify-content-center">
+                    <h3>
+                        ✓ PEACE OF MIND
+                    </h3>
+                    <p class="mt-1mb-0">Knowing your business can survive and
+                        thrive</p>
+                </div>
+                <div class="col-4 d-flex flex-column justify-content-center">
+                    <h3>
+                        ✓ FINANCIAL FREEDOM
+                    </h3>
+                    <p class="mt-1mb-0">For you and your family's future</p>
+                </div>
             </div>
-        </div>
-        <div class="d7 container  d-flex justify-content-around align-content-center">
-            <div class="col-6 m-4 p-4">
-                <h2>
-                    Proven Success With:
-                </h2>
-                <p>
-                    Entrepreneurial owners and their leadership teams that are: open minded, respectful, appreciative,
-                    growth oriented, frustrated, want help, willing to be open, honest and vulnerable.
-                </p>
-                <button href="#" class="nav-link
-                                active">LEARN MORE<span class="iconify"
+            <div class="container d3 text-center">
+                <h2>Ask Yourself, Are You Struggling With... </h2>
+                <div class="row mt-4 p-2 h-auto">
+                    <div class="col-4 d-flex flex-column text-center
+                        align-content-center">
+                        <img src="Images/A+growth+chart+icon.png" class="w-100
+                            img a my-4" />
+                        <h3 class="theam-dark-color">
+                            Growth
+                        </h3>
+                        <p class="my-4 4 mx-2">Hitting a growth ceiling with no
+                            strategy on how to break through?</p>
+                    </div>
+                    <div class="col-4 d-flex flex-column text-center
+                        align-content-center">
+                        <img src="Images/A+mountain+icon.png" class="w-100 img a
+                            my-4" />
+                        <h3 class="theam-dark-color">
+                            Stress
+                        </h3>
+                        <p class="my-4 4 mx-2">Frustrated by the lack of control
+                            you feel in your business right now?</p>
+                    </div>
+                    <div class="col-4 d-flex flex-column text-center
+                        align-content-center">
+                        <img src="Images/a+bar+graph+icon.png" class="w-100 img
+                            a my-4" />
+                        <h3 class="theam-dark-color">
+                            Valuation
+                        </h3>
+                        <p class="my-4 mx-2">How to properly determine the true
+                            value of your business? </p>
+                    </div>
+                </div>
+                <div class="row mt-4 p-2 h-auto">
+                    <div class="col-4 d-flex flex-column text-center
+                        align-content-center">
+                        <img src="Images/A+lounge+chair+and+umbrella+icon.png"
+                            class="w-100 img a my-4" />
+                        <h3 class="theam-dark-color">
+                            Growth
+                        </h3>
+                        <p class="my-4 4 mx-2">Hitting a growth ceiling with no
+                            strategy on how to break through?</p>
+                    </div>
+                    <div class="col-4 d-flex flex-column text-center
+                        align-content-center">
+                        <img src="Images/An+unbalanced+scale.png" class="w-100
+                            img a my-4" />
+                        <h3 class="theam-dark-color">
+                            Stress
+                        </h3>
+                        <p class="my-4 4 mx-2">Frustrated by the lack of control
+                            you feel in your business right now?</p>
+                    </div>
+                    <div class="col-4 d-flex flex-column text-center
+                        align-content-center">
+                        <img src="Images/A+game+plan+on+a+white+board.png"
+                            class="w-100 img a my-4" />
+                        <h3 class="theam-dark-color">
+                            Valuation
+                        </h3>
+                        <p class="my-4 mx-2">How to properly determine the true
+                            value of your business? </p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary my-3 px-4 py-3
+                    btn-lg">TAKE CONTROL TODAY<span class="iconify"
                         data-icon="dashicons:arrow-right-alt2"></span></button>
             </div>
-            <div class="col-6">
-                <div class="row mx-auto">
-                    <div class="col-5 p-4 f-20">10-150 Employees</div>
-                    <div class="col-5 p-4 f-20">10-150 Employees</div>
-                    <div class="col-5 p-4 f-20">10-150 Employees</div>
-                    <div class="col-5 p-4 f-20">10-150 Employees</div>
-                    <div class="col-5 p-4 f-20">10-150 Employees</div>
-                    <div class="col-5 p-4 f-20">10-150 Employees</div>
+            <div class="d4 d-flex align-content-center">
+                <div class="col-7 text-center m-auto">
+                    <h1>
+                        Discover a Proven Plan To Build a Better Business and a
+                        Better Life
+                    </h1>
+                    <button type="button" class="btn btn-primary my-3 px-4 py-3
+                        btn-lg">TAKE CONTROL TODAY<span class="iconify"
+                            data-icon="dashicons:arrow-right-alt2"></span></button>
                 </div>
-
+            </div>
+            <div class="row d5 d-flex justify-content-between">
+                <div class="col-6">
+                    <h2>
+                        What Makes Us Different?
+                    </h2>
+                    <p class="lead my-4">
+                        When it comes to growing a business, most entrepreneurs
+                        tend to get stuck at a certain point and become
+                        frustrated, as they don’t know what to do or how to fix
+                        it. I will help you implement a proven system to break
+                        through that growth ceiling and get to the next level.
+                        This will give you better control of your company,
+                        increased cash flow and ultimately a more durable,
+                        valuable, and smoother running business.
+                    </p>
+                    <p>
+                        <a class="theam-dark-color" data-bs-toggle="collapse"
+                            href="#collapseExample" role="button"
+                            aria-expanded="false"
+                            aria-controls="collapseExample">
+                            + Click to read more
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            Some placeholder content for the collapse component.
+                            This panel is hidden by default but revealed when
+                            the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img
+                        src="Images/Value+Growth+Consulting+Groups+Buffalo+Logo.jfif"
+                        class="w-100 h-auto" alt="">
+                </div>
+            </div>
+            <div class="d6 d-flex flex-column justify-content-center p-4
+                align-content-center">
+                <div class="row container p-4 mx-auto">
+                    <div class="img col-4 p-4 d-flex justify-content-center
+                        align-content-center py-auto">
+                        <img
+                            src="Images/LeeDahmer2CPrincipal26FounderofValueGrowthConsultingGroup.jpg"
+                            alt="Founder's Image /" class="">
+                    </div>
+                    <div class="col-7 text-center">
+                        <h3>
+                            I Get It.
+                        </h3>
+                        <blockquote class="blockquote">
+                            <b>
+                                “As a former CEO and CFO, I’ve been in your
+                                shoes and know the challenges you face every day
+                                as a leader of your business.”
+                            </b>
+                            <p>— LEE DAHMER, PRINCIPAL & FOUNDER </p>
+                        </blockquote>
+                        <ul>
+                            <li>Certified Value Builder™</li>
+                            <li>E.O.S.® Implementer</li>
+                            <li>Certified Merger & Acquisition Advisor®</li>
+                            <li>Chartered Global Management Accountant®</li>
+                            <li>MBA, Finance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row container gx-3 w-100 mx-auto">
+                    <div class="col"> <img src="Images/value-builder-logo.png"
+                            alt=""> </div>
+                    <div class="col"> <img src="Images/eos-model-logo.png"
+                            alt=""> </div>
+                    <div class="col"> <img src="Images/amaa-logo.png" alt="">
+                    </div>
+                    <div class="col"> <img src="Images/cgma-logo.png" alt="">
+                    </div>
+                    <div class="col"> <img src="Images/tcu-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="d7 container d-flex justify-content-around
+                align-content-center mb-4">
+                <div class="col my-4 py-4 gy-3">
+                    <h2 class="mb-4 fs-2">
+                        Proven Success With:
+                    </h2>
+                    <p class="mb-4 mt-2 fs-5">
+                        Entrepreneurial owners and their leadership teams that
+                        are: open minded, respectful, appreciative,
+                        growth oriented, frustrated, want help, willing to be
+                        open, honest and vulnerable.
+                    </p>
+                    <button href="#" class="nav-link mt-2 fs-6
+                        active">LEARN MORE<span class="iconify"
+                            data-icon="dashicons:arrow-right-alt2"></span></button>
+                </div>
+                <div class="col row d-flex justify-content-around">
+                    <div class="col-5 box">10-150 Employees</div>
+                    <div class="col-5 box">10-150 Employees</div>
+                    <div class="col-5 box">10-150 Employees</div>
+                    <div class="col-5 box">10-150 Employees</div>
+                    <div class="col-5 box">10-150 Employees</div>
+                    <div class="col-5 box">10-150 Employees</div>
+                </div>
+            </div>
+            <div class="d8 d-flex flex-column justify-content-center p-4
+                align-content-center">
+                <div class="row text-center">How It Works</div>
+                <div class="row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3>
+                                1. Contact Lee
+                            </h3>
+                            <p class="card-text">Some quick example text to
+                                build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div> 
-
-
-
-
-</body>
-
-
+    </body>
 </html>
