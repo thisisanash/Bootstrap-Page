@@ -31,14 +31,17 @@
             width: 100%;
         }
 
-        header ul li a {
-            color: #463d25 !important;
-            font-weight: 500;
+        header{
+            padding: 17px 70px !important;
+        }
+        .fw-normal {
+            color: #463d25;
+            font-weight: 500 !important;
         }
 
         .cnt {
             max-width: 1300px;
-            padding: 0px 100px !important;
+            padding: 0px 100px;
             margin: 0px auto;
         }
 
@@ -57,26 +60,26 @@
             width: 100%;
             color: #fff;
             background: url(Images/man-smiling-working.jpg);
-            background-position: 50% 0%;
+            background-position: 50% 5%;
             background-size: cover;
         }
 
         .hero .cnt {
-            padding: 100px;
+            padding: 100px 100px;
         }
 
         .hero .cnt .d-flex {
             height: 70% !important;
         }
 
-        .d2 .col-4 {
+        .d2 .col {
             color: rgba(70, 61, 37, .75) !important;
             background: #f4eee2;
             text-align: center;
             height: 100px;
         }
 
-        .d2 .col-4 h3 {
+        .d2 .col h3 {
             color: rgb(159, 138, 80) !important;
             margin: 0;
         }
@@ -204,98 +207,95 @@
 
 <body>
     <div class="code">
-        <div class="cnt p-1">
-            <header class="cnt d-flex flex-wrap
-                    justify-content-center py-3
-                    my-2">
-                <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto h-100 w-25">
-                    <img src="Images/value-growth-horizontal-light-bg2.png" class="w-100" alt="">
-                </a>
+        <header class="cnt d-flex flex-wrap
+        justify-content-center
+        my-2">
 
-                <ul class="nav nav-pills">
-                    <li class="nav-item d-flex align-items-center"><a href="#" class="nav-link">Resources</a></li>
-                    <li class="nav-item d-flex align-items-center"><a href="#" class="nav-link">Blog</a></li>
-                    <li class="nav-item d-flex align-items-center"><button href="#" class="nav-link
-                                active">CONTACT LEE<span class="iconify"
-                                data-icon="dashicons:arrow-right-alt2"></span></button></li>
-                </ul>
-            </header>
-        </div>
+            <a href="/" class="d-flex align-items-center mb-md-0 me-md-auto h-100 w-25 px-1 py-1 mx-1">
+                <img src="Images/value-growth-horizontal-light-bg2.png" style="width:280px;" alt="">
+            </a>
+
+            <ul class="nav nav-pills fw-normal">
+                <li class="nav-item d-flex align-items-center"><a href="#" class="nav-link fw-normal">Resources</a></li>
+                <li class="nav-item d-flex align-items-center"><a href="#" class="nav-link fw-normal">Blog</a></li>
+                <li class="nav-item d-flex align-items-center mr-3"><button href="#" class="nav-link active px-3 fw-normal">CONTACT LEE<span class="iconify" data-icon="dashicons:arrow-right-alt2"></span></button></li>
+            </ul>
+        </header>
         <div class="hero col-12 d-flex align-content-center">
             <div class="cnt d-flex align-items-center">
                 <div class="col-7 d-flex flex-column
-                        justify-content-between">
-                    <h1 class="fw-bold">
+                        justify-content-between p-4 mx-4">
+                    <h1 class="fw-bold pr-4 my-4" style="padding-right: 60px;">
                         Get More of What You Want From Your Business
                     </h1>
                     <p>Helping business owners & leaders follow a proven
                         process to build a more valuable business—so you can
                         live the life you’ve always dreamed of.
                     </p>
-                    <button class="btn btn-primary col-5 py-3 p-3 border-0" type="submit">SHOW ME HOW<span
+                    <button class="btn btn-primary col-4 my-3 p-3 border-0" type="submit">SHOW ME HOW<span
                             class="iconify" data-icon="dashicons:arrow-right-alt2"></span></button>
                 </div>
             </div>
         </div>
-        <div class="row col-12 m-0 d2">
-            <div class="col-4 d-flex flex-column justify-content-center">
+        <div class="d2 row overflow-hidden col-12 p-0 m-0">
+            <div class="col d-flex flex-column justify-content-center">
                 <h3>
                     ✓ CONFIDENCE
                 </h3>
-                <p class="mt-1mb-0">Follow a proven system to grow your
+                <p class="mt-1 mb-0">Follow a proven system to grow your
                     company</p>
             </div>
-            <div class="col-4 d-flex flex-column justify-content-center">
+            <div class="col d-flex flex-column justify-content-center mx-2">
                 <h3>
                     ✓ PEACE OF MIND
                 </h3>
-                <p class="mt-1mb-0">Knowing your business can survive and
+                <p class="mt-1 mb-0">Knowing your business can survive and
                     thrive</p>
             </div>
-            <div class="col-4 d-flex flex-column justify-content-center">
+            <div class="col d-flex flex-column justify-content-center">
                 <h3>
                     ✓ FINANCIAL FREEDOM
                 </h3>
-                <p class="mt-1mb-0">For you and your family's future</p>
+                <p class="mt-1 mb-0">For you and your family's future</p>
             </div>
         </div>
         <div class="cnt d3 text-center">
             <h2>Ask Yourself, Are You Struggling With... </h2>
-            <div class="row mt-4 p-2 h-auto">
+            <div class="row my-4 h-auto">
                 <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
+                        align-content-center p-0">
                     <img src="Images/A+growth+chart+icon.png" class="w-100
                             img a my-4" />
                     <h3 class="theam-dark-color">
                         Growth
                     </h3>
-                    <p class="my-4 4 mx-2">Hitting a growth ceiling with no
+                    <p class="mt-3 my-2 mx-2">Hitting a growth ceiling with no
                         strategy on how to break through?</p>
                 </div>
                 <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
+                        align-content-center p-0">
                     <img src="Images/A+mountain+icon.png" class="w-100 img a
                             my-4" />
                     <h3 class="theam-dark-color">
                         Stress
                     </h3>
-                    <p class="my-4 4 mx-2">Frustrated by the lack of control
+                    <p class="mt-3 my-2 mx-2">Frustrated by the lack of control
                         you feel in your business right now?</p>
                 </div>
                 <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
+                        align-content-center p-0">
                     <img src="Images/a+bar+graph+icon.png" class="w-100 img
                             a my-4" />
                     <h3 class="theam-dark-color">
                         Valuation
                     </h3>
-                    <p class="my-4 mx-2">How to properly determine the true
+                    <p class="mt-3 my-2 mx-2">How to properly determine the true
                         value of your business? </p>
                 </div>
             </div>
-            <div class="row mt-4 p-2 h-auto">
+            <div class="row my-4 h-auto">
                 <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
+                        align-content-center p-0">
                     <img src="Images/A+lounge+chair+and+umbrella+icon.png" class="w-100 img a my-4" />
                     <h3 class="theam-dark-color">
                         Growth
@@ -304,7 +304,7 @@
                         strategy on how to break through?</p>
                 </div>
                 <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
+                        align-content-center p-0">
                     <img src="Images/An+unbalanced+scale.png" class="w-100
                             img a my-4" />
                     <h3 class="theam-dark-color">
@@ -314,17 +314,17 @@
                         you feel in your business right now?</p>
                 </div>
                 <div class="col-4 d-flex flex-column text-center
-                        align-content-center">
+                        align-content-center p-0">
                     <img src="Images/A+game+plan+on+a+white+board.png" class="w-100 img a my-4" />
                     <h3 class="theam-dark-color">
                         Valuation
                     </h3>
-                    <p class="my-4 mx-2">How to properly determine the true
+                    <p class="mt-3 my-2 mx-2">How to properly determine the true
                         value of your business? </p>
                 </div>
             </div>
             <button type="button" class="btn btn-primary my-3 px-4 py-3
-                    btn-lg">TAKE CONTROL TODAY<span class="iconify"
+                    btn-lg lead fs-6 fw-1">TAKE CONTROL TODAY<span class="iconify"
                     data-icon="dashicons:arrow-right-alt2"></span></button>
         </div>
         <div class="d4 d-flex align-content-center">
@@ -607,24 +607,18 @@
                     </h2>
                     <div class="row p-4">
                         <div class="card col bg-transparent">
-                            <img src="Images/warning+sign.png"
-                                class="card-img-top pr-4 w-75"
-                                alt="...">
+                            <img src="Images/warning+sign.png" class="card-img-top pr-4 w-75" alt="...">
                             <p class="card-text mt-3">Have you become the
                                 bottle neck of your own company?</p>
                         </div>
                         <div class="card col bg-transparent">
-                            <img src="Images/Lightening+bolt.png"
-                                class="card-img-top pr-4 w-75"
-                                alt="...">
+                            <img src="Images/Lightening+bolt.png" class="card-img-top pr-4 w-75" alt="...">
                             <p class="card-text mt-3">How much time and
                                 energy are you wasting trying to get your
                                 business to the next level?</p>
                         </div>
                         <div class="card col bg-transparent">
-                            <img src="Images/Dollar+sign.png"
-                                class="card-img-top pr-4 w-75"
-                                alt="...">
+                            <img src="Images/Dollar+sign.png" class="card-img-top pr-4 w-75" alt="...">
                             <p class="card-text mt-3">How much money are you
                                 leaving on the table because you can't sell
                                 your business for what you want?</p>
