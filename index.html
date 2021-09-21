@@ -20,14 +20,43 @@
     <style>
         @font-face {
             font-family: mr-eaves;
+            src: url("font/mreavesxl/MrEavesXLModOT-Light.ttf");
+            font-style: normal;
+            font-weight: 100;
+        }
+        @font-face {
+            font-family: mr-eaves;
+            src: url("font/mreavesxl/MrEavesXLModOT-Thin.ttf");
+            font-style: normal;
+            font-weight: 300;
+        }
+        @font-face {
+            font-family: mr-eaves;
             src: url("font/mreavesxl/MrEavesXLModOT-Reg.ttf");
             font-style: normal;
             font-weight: 400;
         }
-
+        @font-face {
+            font-family: mr-eaves;
+            src: url("font/mreavesxl/MrEavesXLModOT-Book.ttf");
+            font-style: normal;
+            font-weight: 600;
+        }
         @font-face {
             font-family: mr-eaves;
             src: url("font/mreavesxl/MrEavesXLModOT-Bold.ttf");
+            font-style: normal;
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: mr-eaves;
+            src: url("font/mreavesxl/MrEavesXLModOT-Heavy.ttf");
+            font-style: normal;
+            font-weight: 800;
+        }
+        @font-face {
+            font-family: mr-eaves;
+            src: url("font/mreavesxl/MrEavesXLModOT-Ultra.ttf");
             font-style: normal;
             font-weight: 900;
         }
@@ -36,7 +65,7 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            border: 0.1px dashed rgba(109, 109, 109, 0.494);
+            /* border: 0.1px dashed rgba(109, 109, 109, 0.494); */
             font-family: 'mr-eaves', sans-serif !important;
             font-weight: 400;
         }
@@ -46,16 +75,17 @@
         h3,
         h4 {
             font-family: 'mr-eaves', sans-serif !important;
-            font-weight: 900;
-            letter-spacing: -.01em;
+            font-weight: 700;
             line-height: 1em;
         }
 
         p, .fw-normal {
             font-style: normal;
-            font-size: 18px !important;
+            font-size: 17px;
             letter-spacing: 0em;
             line-height: 1.4em !important;
+            line-height: 0.5em;
+            font-weight: 400 ;
         }
 
         body {
@@ -81,14 +111,9 @@
             border: 0px solid !important;
             border: 0px solid !important;
             color: #fff !important;
-            letter-spacing: 1px !important;
+            letter-spacing: 0.1em !important;
         }
 
-        p {
-            font-weight: lighter;
-            font-size: 16px;
-            line-height: 175%;
-        }
         a{
             color: #463d25 !important;
         }
@@ -115,7 +140,6 @@
             background: #f4eee2;
             text-align: center;
             height: 120px;
-            font-weight: 400;
         }
 
         .section2 .col h3 {
@@ -123,12 +147,15 @@
             margin: 0;
         }
 
-        h3 {
-            font-size: 20px !important;
+        h3, .h3 {
+            font-size: 20px;
         }
 
         .section3 {
             padding: 80px 80px 0px;
+        }
+        .section3 .row .col h3{
+            font-size: 24px;
         }
 
         .section3 .row .col p,
@@ -141,7 +168,7 @@
         }
 
         .section4 {
-            height: 75vh !important;
+            height: 70vh !important;
             color: #fff;
             background: url(Images/family-reading-together.jpg);
             background-position: 50% 80%;
@@ -151,19 +178,18 @@
         }
 
         .section4 .m-auto h2 {
-            font-size: 34px;
-            font-weight: 600;
+            font-size: 38px;
+            font-weight: 700;
         }
 
         .section4 .m-auto button {
             font-size: 8px;
             letter-spacing: 1.5px;
-            font-weight: 400;
         }
 
         .section5 {
             margin: 0px 100px;
-            padding: 80px 100px;
+            padding: 100px 110px;
             line-height: 150% !important;
         }
 
@@ -178,6 +204,12 @@
         .section6 .row img {
             position: relative;
             width: 80% !important;
+        }
+        .qual-box ul{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-around;
         }
 
         .box {
@@ -306,21 +338,21 @@
                 <h3>
                     ✓ CONFIDENCE
                 </h3>
-                <p class="mt-1 mb-0">Follow a proven system to grow your
+                <p class="mt-2 mb-0">Follow a proven system to grow your
                     company</p>
             </div>
             <div class="col d-flex flex-column justify-content-center mx-2">
                 <h3>
                     ✓ PEACE OF MIND
                 </h3>
-                <p class="mt-1 mb-0">Knowing your business can survive and
+                <p class="mt-2 mb-0">Knowing your business can survive and
                     thrive</p>
             </div>
             <div class="col d-flex flex-column justify-content-center">
                 <h3>
                     ✓ FINANCIAL FREEDOM
                 </h3>
-                <p class="mt-1 mb-0">For you and your family's future</p>
+                <p class="mt-2 mb-0">For you and your family's future</p>
             </div>
         </div>
         <div class="section3 cnt text-center">
@@ -402,17 +434,17 @@
                     Discover a Proven Plan To Build a Better Business and a
                     Better Life
                 </h2>
-                <button type="button" class="btn btn-primary mt-3 px-4 py-3
-                        btn-lg">&nbsp CONTACT LEE<span class="iconify" data-icon="dashicons:arrow-right-alt2"></span>
+                <button type="button" class="btn btn-primary mt-4 px-4 py-3
+                        btn-lg">&nbsp CONTACT LEE &nbsp<span class="iconify" data-icon="dashicons:arrow-right-alt2"></span>
                     &nbsp</button>
             </div>
         </div>
         <div class="section5 cnt mx-auto d-flex justify-content-around">
             <div class="col-5">
-                <h2 class="theam-dark-color">
+                <h2 class="theam-dark-color ">
                     What Makes Us Different?
                 </h2>
-                <p class="my-5 lh-base">
+                <p class="my-4 lh-base">
                     When it comes to growing a business, most entrepreneurs
                     tend to get stuck at a certain point and become
                     frustrated, as they don’t know what to do or how to fix
@@ -423,9 +455,9 @@
                     valuable, and smoother running business.
                 </p>
                 <p>
-                    <a class="theam-dark-color fs-5" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    <a class="theam-dark-color fs-5" style="text-decoration: none; font-size: 23px !important;" data-bs-toggle="collapse" href="#collapseExample" role="button"
                         aria-expanded="false" aria-controls="collapseExample">
-                        + Click to read more
+                        <b style="color:rgb(159, 138, 80);">+</b> &nbsp; Click to read more
                     </a>
                 </p>
                 <div class="collapse" id="collapseExample">
@@ -456,17 +488,17 @@
         </div>
         <div class="section6 d-flex flex-column justify-content-center
                 align-content-center mb-4">
-            <div class="row cnt mx-auto">
-                <div class="img col-4 p-4 d-flex justify-content-center
+            <div class="row cnt mx-auto d-flex justify-content-evenly">
+                <div class="img col-4 px-4 pb-5 d-flex justify-content-center
                         align-content-center py-auto">
                     <img src="Images/LeeDahmer2CPrincipal26FounderofValueGrowthConsultingGroup.jpg"
                         alt="Founder's Image /" class="">
                 </div>
                 <div class="col-7 text-center">
-                    <h3>
+                    <h2 class="fst-italic">
                         I Get It.
-                    </h3>
-                    <blockquote class="blockquote">
+                    </h2>
+                    <blockquote class="blockquote mt-4 mb-4">
                         <b>
                             “As a former CEO and CFO, I’ve been in your
                             shoes and know the challenges you face every day
@@ -475,7 +507,7 @@
                         <p>— LEE DAHMER, PRINCIPAL & FOUNDER </p>
                     </blockquote>
 
-                    <div class="qual-box">
+                    <div class="qual-box mt-2 fs-5 h-50 d-flex justify-content-center">
                         <ul>
                             <li>Certified Value Builder™</li>
                             <li>E.O.S.® Implementer</li>
