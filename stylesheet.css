@@ -1,3 +1,10 @@
+:root {
+    --bg: #fff;
+    --theame-color-light: #9f8a50;
+    --theame-color-dark: #463d25;
+}
+
+
 @font-face {
     font-family: mr-eaves;
     src: url("font/mreavesxl/MrEavesXLModOT-Light.ttf");
@@ -56,18 +63,21 @@
     font-weight: 400;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'mr-eaves', sans-serif !important;
     font-weight: 700;
-    line-height: 1em;
+    line-height: normal;
 }
 
-p, .fw-normal {
+p,
+.fw-normal {
     font-style: normal;
     font-size: 17px;
     letter-spacing: 0em;
-    line-height: 1.4em !important;
-    line-height: 0.5em;
+    line-height: normal;
     font-weight: 400;
 }
 
@@ -80,6 +90,10 @@ header {
     padding: 17px 70px !important;
 }
 
+header .fw-normal {
+    font-size: 18px;
+}
+
 .cnt {
     max-width: 1300px;
     padding: 0px 100px;
@@ -90,11 +104,13 @@ button {
     background: #9f8a50 !important;
     font-weight: 800 !important;
     border-radius: 3px !important;
-    font-size: 15px !important;
+    font-size: 14px !important;
     border: 0px solid !important;
     border: 0px solid !important;
     color: #fff !important;
-    letter-spacing: 0.1em !important;
+    letter-spacing: 0.15em !important;
+    line-height: normal;
+    width: fit-content;
 }
 
 a {
@@ -118,9 +134,16 @@ a {
     height: 70% !important;
 }
 
+.hero p {
+    font-size: 17.5px;
+    line-height: 150%;
+    opacity: 0.9;
+    margin-top: 12px;
+}
+
 .section2 .col {
     color: rgba(70, 61, 37, .75) !important;
-    background: #f4eee2;
+    background: #f3ede2;
     text-align: center;
     height: 120px;
 }
@@ -128,22 +151,50 @@ a {
 .section2 .col h3 {
     color: rgb(159, 138, 80) !important;
     margin: 0;
+    font-weight: bold;
+    letter-spacing: 0.05em;
 }
 
-h3, .h3 {
-    font-size: 20px;
+.section2 .col p {
+    font-size: 18px;
+    letter-spacing: 0.03em;
+}
+
+h3,
+.h3 {
+    font-size: 20px !important;
 }
 
 .section3 {
-    padding: 80px 80px 0px;
+    padding: 80px 70px 0px;
 }
 
-.section3 .row .col h3 {
-    font-size: 24px;
+.section3 .row {
+    margin: auto;
 }
 
-.section3 .row .col p, .section5 .col-5 p {
+.section3 .row:nth-child(3) {
+    margin: 50px auto 10px;
+}
+
+.section3 .row h3 {
+    font-size: 22px !important;
+    font-weight: bold;
+}
+
+.section3 .row .col p,
+.section5 .col-5 p,
+.section5 .p,
+.section5 ul li,
+.section5 .fw-bold {
     color: rgba(70, 61, 37, .7);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.section5 .title {
+    margin: 10px 0px 10px !important;
 }
 
 .theam-dark-color {
@@ -154,7 +205,7 @@ h3, .h3 {
     height: 70vh !important;
     color: #fff;
     background: url(Images/family-reading-together.jpg);
-    background-position: 50% 80%;
+    background-position: 50% 75%;
     background-size: 100%;
     margin: 100px 0px 0px 0px;
     padding: 100px;
@@ -163,6 +214,8 @@ h3, .h3 {
 .section4 .m-auto h2 {
     font-size: 38px;
     font-weight: 700;
+    line-height: 1.1em;
+    margin-bottom: 12px;
 }
 
 .section4 .m-auto button {
@@ -172,20 +225,33 @@ h3, .h3 {
 
 .section5 {
     margin: 0px 100px;
-    padding: 100px 110px;
-    line-height: 150% !important;
+    padding: 100px 100px 110px;
+    line-height: 150%;
 }
 
-.section6, .section8 {
+.section5 h2 {
+    font-weight: bold;
+}
+
+.section6,
+.section8 {
     background-color: #9f8a50;
     color: #fff;
     height: 100vh;
-    padding: 8% 5%;
 }
 
 .section6 .row img {
     position: relative;
     width: 80% !important;
+}
+
+.section6 blockquote b {
+    line-height: 0.2em;
+    margin-bottom: 0.4em;
+}
+
+.section6 .img-box{
+    padding:  0px 110px;
 }
 
 .qual-box {
@@ -198,19 +264,47 @@ h3, .h3 {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: space-around;
+    font-size: 18px;
+    justify-content: space-evenly;
+    padding: 10px 0px 0px 50px !important;
 }
 
 .section7 {
-    padding: 40px 80px;
+    padding: 70px 80px;
+}
+
+.section7 p {
+    font-size: 18px;
+    letter-spacing: 0em;
+    line-height: 150%;
+    text-transform: none;
+    color: rgba(70, 61, 37, .7);
+    padding-right: 140px;
+}
+
+.section7 .col-5 {
+    line-height: 100%;
+    width: 44%;
+}
+
+.section7 h2 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #463d25;
+}
+
+.section7 button {
+    font-size: 13px !important;
+    padding: 13px 26px;
 }
 
 .box {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 100%;
-    padding: 24px;
+    padding: 24px !important;
     margin-top: 34px;
     font-weight: 400;
+    color: #463d25;
     background: #f0ebe5;
     border-top: 10px solid #9a8957;
 }
@@ -220,32 +314,65 @@ h3, .h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 100px !important;
+    height: 93vh;
+    padding: 100px;
+}
+
+.section8 .cnt {
+    padding: 10px 65px;
+}
+
+.section8 .row:nth-child(1) {
+    margin-top: 50px;
+    font-size: 34px;
 }
 
 .section8 .cnt .card {
     background: #f0ebe5;
     border-radius: 15px;
     overflow: hidden;
-    margin: 14px;
+    margin: 17px;
 }
 
-.section8 .cnt .card .card-body, .resource div h3 {
-    padding: 24px;
+.section8 .cnt .card .card-body {
+    padding: 39px;
 }
 
-.section8 .cnt .card .card-body h3, .res-title h3 {
-    font-size: 23px;
+.section8 .cnt .card .card-body h3,
+.res-title h3 {
+    font-size: 23px !important;
+    font-weight: bold;
 }
 
-.section8 .cnt .card .card-body p, .resource div p {
+.section8 .cnt .card .card-body p,
+.resource div p {
     color: rgba(70, 61, 37, .75);
     font-weight: 400;
     line-height: 125%;
+    font-size: 17px;
+    margin-bottom: 0;
 }
 
 .section9 {
     padding: 80px;
+}
+
+.section9 h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: var(--theame-color-dark);
+}
+
+.section9 h3 {
+    font-weight: bold;
+    color: var(--theame-color-dark);
+    font-size: 23.5px !important;
+}
+
+.section9 p {
+    line-height: 1.4em !important;
+    font-size: 17.5px !important;
+    margin: 30px 0px !important;
 }
 
 .section10 {
@@ -263,14 +390,15 @@ h3, .h3 {
 
 .section10 div h3 {
     color: rgba(70, 61, 37);
-    font-size: 34px;
+    font-size: 34px !important;
     line-height: 100%;
+    font-weight: bold;
 }
 
-.section10 div div p {
-    font-size: 20px;
+.section10 p {
+    font-size: 19.5px;
     font-weight: 700;
-    line-height: 125% !important;
+    line-height: 135%;
     color: rgba(70, 61, 37);
 }
 
@@ -280,28 +408,43 @@ h3, .h3 {
 
 .section11 div .card h3 {
     color: #222222;
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 22px !important;
+    font-weight: 400;
 }
 
 .section11 div .card p {
     color: rgba(70, 61, 37, .7);
-    font-size: 18px;
+    font-size: 17.5px;
     font-weight: 400;
+    line-height: 1.4em;
 }
 
 .section12 {
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     background: #f2ece1;
+}
+.section12 h2{
+    font-size: 32px !important;
 }
 
 .section12 .cnt {
     padding: 100px 80px 50px;
 }
 
-.section12-part, .line {
-    padding: 0px 100px;
+.section12-part,
+.line {
+    padding: 0px 220px 0px 80px;
+}
+
+.line hr {
+    color: #9f8a50;
+    opacity: 1 !important;
+}
+
+.section12 .card:nth-child(2),
+.section12 .card:nth-child(3) {
+    padding: 0;
 }
 
 .section12 .cnt div h2 {
@@ -309,11 +452,14 @@ h3, .h3 {
     font-size: 34px;
 }
 
-.section12 .cnt div div div p, .section12 .cnt div div p {
+.section12 .cnt p {
+    font-size: 18px;
+    line-height: 1.4em;
     color: rgba(70, 61, 37, .7);
 }
 
-.section13, .section14 {
+.section13,
+.section14 {
     background: url("Images/man-handshake.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -322,9 +468,24 @@ h3, .h3 {
     height: 45vh;
 }
 
-.section14 {
-    background: #463d25;
-    height: 40vh;
+footer {
+    background: #463d25 !important;
+    height: 40vh !important;
+}
+
+footer .foot-links h3 {
+    font-size: 17px !important;
+    letter-spacing: 0.1em;
+}
+
+
+footer .foot-buttom p {
+    font-size: 18px;
+    color: #ffffffcc;
+}
+
+footer .foot-buttom a {
+    color: white !important;
 }
 
 .in-logo svg {
@@ -348,7 +509,8 @@ h3, .h3 {
     color: #463d25;
 }
 
-.res-title .line, .res-title .line hr {
+.res-title .line,
+.res-title .line hr {
     padding: 0px;
     color: #9f8a50;
     opacity: 1 !important;
